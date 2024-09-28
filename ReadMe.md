@@ -30,7 +30,7 @@ El organizador incluye las siguientes funcionalidades:
 3. Ejecuta el programa desde la línea de comandos:
 
 ```
-python main.py
+python ToDo.py
 ```
 
 ## Uso
