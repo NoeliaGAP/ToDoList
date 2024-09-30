@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+<link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <title>TodoList</title>
+</head>
+<body>
+    <header>
+        <span class="badge">Noelia GAP</span>
+        <h1 class="title">Today's <span>To-Do</span> </h1>
+    </header>
+    <main>    
+    <div class="table-container">
+        <button class="add-btn">
+            <i class="ri-add-fill"></i> Agregar
+        </button>
+        <table>
+            <thead>
+            <tr>
+                <th>Tarea</th>
+                <th>Completado</th>
+                <th>Fecha</th>
+                <th>Categoria</th>
+                <th>Recordatorio</th>
+                <th>Acciones</th>
+            </tr>
+            </thead>
+            <tbody id="body">
+
+            </tbody>
+        </table>
+    </div>
+    </main>
+    
+    <div class="modal">
+        <div class="modal__body">
+            <button class="close">
+                <i class="ri-close-large-line"></i>
+            </button>
+            <h2>Agregar Tarea</h2>
+
+            <form>
+                <div>
+                    <label for="description">Descripción</label>
+                    <input id="descripcion" type="text" name="description" placeholder="Ingrese una descripción">
+                </div>
+
+                <div>
+                    <label for="due_date">Fecha</label>
+                    <input id="date" type="date" name="due_date" placeholder="Ingrese la fecha limite">
+                </div>
+                <div>
+                    <label for="category">Categoria</label>
+                    <select name="category" id="category">
+                        <option value="">Seleccionar</option>
+                        <option value="personal">Personal</option>
+                        <option value="school">Escuela</option>
+                        <option value="hobby">Hobby</option>
+                    </select>
+                </div>
+                <input type="submit" value="Agregar tarea">
+            </form>
+        </div>
+    </div>
+</body>
+<script defer src="script.js"></script>
+</html>

@@ -72,7 +72,7 @@ class TaskManager:
         else:
             print("Número de tarea inválido.")
 
-    # Agregar fechas de vencimiento
+    # Editar fechas de vencimiento
     def add_due_date(self, task_number, due_date):
         if 0 < task_number <= len(self.tasks):
             self.tasks[task_number - 1]['due_date'] = due_date
@@ -81,7 +81,7 @@ class TaskManager:
         else:
             print("Número de tarea inválido.")
 
-    # Categorizar tarea
+    # Editar categoria de tarea
     def categorize_task(self, task_number, category):
         if 0 < task_number <= len(self.tasks):
             self.tasks[task_number - 1]['category'] = category
@@ -130,7 +130,7 @@ def main():
         print("0. Salir")
         
         choice = input("Elige una opción: ")
-
+    
         if choice == '1':
             description = input("Descripción de la tarea: ")
             due_date = input("Fecha límite (YYYY-MM-DD) o enter para omitir: ")

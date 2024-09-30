@@ -1,0 +1,30 @@
+[
+    {
+        "description": "Ir a clases ma\u00f1ana",
+        "completed": false,
+        "due_date": "2024-09-30",
+        "category": "Escuela",
+        "reminder": false
+    },
+    {
+        "description": "Dar de comer a Wilson",
+        "completed": true,
+        "due_date": "2024-10-01",
+        "category": "Personal",
+        "reminder": false
+    },
+    {
+        "description": "Realizar tareas JS",
+        "completed": false,
+        "due_date": "2024-10-01",
+        "category": "Escuela",
+        "reminder": "2024-09-30 16:00:00"
+    },
+    {
+        "description": "Comer diariamente",
+        "completed": false,
+        "due_date": "2024-10-03",
+        "category": "personal",
+        "reminder": false
+    }
+]
